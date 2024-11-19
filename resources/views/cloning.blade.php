@@ -144,7 +144,7 @@
                 </div>
                 <div class="col-md-7 order-md-1">
                     <h1 class="mt-4 display-3">Build fast, responsif sites with bootstrap</h1>
-                    <p class="fs-5 mt-3">Quickly design and customize responsive mobile-first sites with Bootstrap, the
+                    <p class="fs-5 mt-3">Quickly Design and Customize responsive mobile-first sites with Bootstrap, the
                         world's most popular front-end open source toolkit, featuring Sass variables and mixins,
                         responsive grid system, extensive prebuilt components, and powerful javaScript plugins </p>
                     <div class="row">

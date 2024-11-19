@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container m-5">
-        {{-- Contoh cara mereferensikan gambar di dalam file blade dengan menggunakan pendekatan Vite --}}
+        {{-- Contoh cara mereferensikan gambar di dalam file blade dengan menggunakan pendekatan Vitee --}}
         <img class="img-thumbnail" src="{{ Vite::asset('resources/images/main.svg') }}" alt="image">
     </div>
     @vite('resources/js/app.js')

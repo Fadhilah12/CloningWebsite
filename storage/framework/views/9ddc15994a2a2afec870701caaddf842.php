@@ -8,7 +8,7 @@
     <title>Bootstrap Clone</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
-    @vite('resources/sass/app.scss')
+    <?php echo app('Illuminate\Foundation\Vite')('resources/sass/app.scss'); ?>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
         <div class="container py-2 px-4">
             <!--navbar brand-->
             <a href="#" class="navbar-brand mb-0 h1">
-                <img class="img-fluid" src="{{ Vite::asset('resources/images/logo-white.svg') }}" alt="logo" style="width: 40px;">
+                <img class="img-fluid" src="<?php echo e(Vite::asset('resources/images/logo-white.svg')); ?>" alt="logo" style="width: 40px;">
             </a>
 
             <!--navbar toggler-->
@@ -45,7 +45,7 @@
                         <li class="nav-item col-6 col-md-auto"><a href="#" class="nav-link text-white">Examples</a></li>
                         <li class="nav-item col-6 col-md-auto"><a href="#" class="nav-link text-white">Icons</a></li>
                         <li class="nav-item col-6 col-md-auto"><a href="#" class="nav-link text-white">Themes</a></li>
-                        <li class="nav-item col-6 col-md-auto"><a href="#" class="nav-link text-white">BLOG</a></li>
+                        <li class="nav-item col-6 col-md-auto"><a href="#" class="nav-link text-white">Blog</a></li>
                     </ul>
 
                     <hr class="d-md-none text-white-50"> <!--horizontal line-->
@@ -140,7 +140,7 @@
         <div class="container py-5 px-4">
             <div class="row">
                 <div class="col-md-5 order-md-2">
-                    <img class="img-fluid" src="{{ Vite::asset('resources/images/main.svg') }}" alt="main logo">
+                    <img class="img-fluid" src="<?php echo e(Vite::asset('resources/images/main.svg')); ?>" alt="main logo">
                 </div>
                 <div class="col-md-7 order-md-1">
                     <h1 class="mt-4 display-3">Build fast, responsif sites with bootstrap</h1>
@@ -183,7 +183,7 @@
                     </a>
                 </div>
                 <div class="col-lg-6">
-                    <img class="img-fluid" src="{{ Vite::asset('resources/images/bs-icons.png') }}" alt="bootstrap-icons">
+                    <img class="img-fluid" src="<?php echo e(Vite::asset('resources/images/bs-icons.png')); ?>" alt="bootstrap-icons">
                 </div>
             </div>
         </div>
@@ -209,7 +209,7 @@
                         </a>
                     </div>
                     <div class="col-lg-6">
-                        <img class="img-fluid" src="{{ Vite::asset('resources/images/bs-themes.png') }}" alt="bootstrap-themes">
+                        <img class="img-fluid" src="<?php echo e(Vite::asset('resources/images/bs-themes.png')); ?>" alt="bootstrap-themes">
                     </div>
                 </div>
             </div>
@@ -221,7 +221,7 @@
                     <div class="col-lg-3 mb-5">
                         <a href="" class="logo text-decoration-none">
                             <div class="d-flex">
-                                <img class="img-fluid" src="{{ Vite::asset('resources/images/logo-black.svg') }}" alt="bootstrap-themes" style="width: 40px;">
+                                <img class="img-fluid" src="<?php echo e(Vite::asset('resources/images/logo-black.svg')); ?>" alt="bootstrap-themes" style="width: 40px;">
                                 <div class="fs-5 ms-2 text-black">Bootstrap</div>
                             </div>
                         </a>
@@ -282,8 +282,9 @@
                 </div>
             </div>
         </div>
-        {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script> --}}
-        @vite('resources/js/app.js')
+        
+        <?php echo app('Illuminate\Foundation\Vite')('resources/js/app.js'); ?>
     </body>
 
 </html>
+<?php /**PATH /var/www/resources/views/cloning.blade.php ENDPATH**/ ?>
